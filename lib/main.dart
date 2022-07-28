@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:covid_project/providers/data.dart';
 import 'package:covid_project/screen/provinsi_screen.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.red),
+      theme: ThemeData(primarySwatch: Colors.cyan),
       home: ChangeNotifierProvider(
         create: (context) => Data(),
         child: ProvinsiScreen(),
